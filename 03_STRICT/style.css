@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    --1st_color: #48baff;
+    --2nd_color: #5f656f;
+}
+
+
+
+/* Header Part Desgin */
+
+.header_part{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.manu_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a img {
+    width: 140px;
+    height: 30px;
+}
+
+.nav_manu{}
+.nav_manu ul {
+    display: flex;
+    list-style: none;
+}
+.nav_manu ul li{}
+
+.nav_manu ul li a {
+    text-decoration: none;
+    padding: 0 20px;
+    color: var(--2nd_color);
+    font-size: 20px;
+}
+.nav_manu ul li a:hover{
+  color: var(--1st_color);
+}
+
+/* Responsive Manu */
+
+.bars {
+    color: var(--1st_color);
+    font-size: 28px;
+    border: 1px solid var(--1st_color);
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 0px 10px;
+    display: none;
+}
+
+
+
+
+/* Hero Part Design */
+
+.hero_part{
+    background: url(./img/hero_img.png);
+    background-position: center;
+    width: 100%;
+    height: fit-content;
+    padding: 150px 0;
+}
+
+
+.hero_container{
+    text-align: center;
+    color: #fff;
+
+    position: relative;
+}
+
+
+.hero_container h1{
+    font-size: 70px;
+    position: relative;
+}
+
+.hero_container h1::after {
+    content: "";
+    width: 450px;
+    height: 2px;
+    background: var(--1st_color);
+    position: absolute;
+    top: 100%;
+    right: 29%;
+}
+
+.hero_btn a{
+   text-decoration: none;
+   font-size: 18px;
+   border: 1px solid var(--1st_color);
+   padding: 10px 25px;
+   color: #fff;
+   border-radius: 10px;
+}
+
+.hero_btn a:hover{
+    background-color: #48baff;
+}
+
+.hero_container p {
+    padding-bottom: 35px;
+}
+
+
+.caret-down {
+    position: absolute;
+    top: 157%;
+    left: 48%;
+    color: #fff;
+    font-size: 31px;
+}
+.caret-down:hover {
+    color: #fff;
+}
+
+
+/* Feature Part Design */
+.feature_img{
+    padding-bottom: 80px;
+}
+.feature_part{
+    padding: 100px 0;
+}
+.featire_title{
+    text-align: center;
+}
+
+.featire_title p {
+    padding: 0 10%;
+}
+
+.feature_conmain {
+    text-align: center;
+}
+
+
+.feature_icon {
+    width: 70px;
+    height: 50px;
+    background: var(--1st_color);
+    position: relative;
+    margin: auto;
+   
+}
+
+.feature_icon a{
+    color: #fff;
+    font-size: 25px;
+    /* padding: 5px 0; */
+}
+
+.feature_icon a i {
+    margin-top: 10px;
+}
+
+
+.feature_conmain h3 {
+    margin-top: 15px;
+}
+
+.feature_con {
+    padding: 30px 0;
+}
+
+
+/* Gallry Part Design */
+
+.img_container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.img_container img{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+
+.image_overlay { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(72, 186, 255, 0.8);
+    top: 50%;
+    left:50% ;
+    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+   
+}
+
+.overlay_icon{
+    position: absolute;
+    top: 50%;
+    left:50% ;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 1111;
+    font-size: 20px;
+}
+
+
+.img_container:hover .image_overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* contact Part Design */
+
+.contact_part{
+    background: url(./img/contact_img.png);
+    padding: 150px 0;
+}
+.contact_container{}
+.contact_title{
+    color: #fff;
+}
+.contact_title h3 {
+    font-size: 30px;
+}
+.contact_title p{
+    color: var(--2nd_color);
+}
+
+
+.contact_form{}
+
+.contact_form input{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.contact_form .name {
+    background: transparent;
+    padding: 10px;
+    color: #999999;
+    outline: none;
+    font-size: 18px;
+    border: 2px solid #999999;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.contact_form .email{
+    background: transparent;
+    padding: 10px;
+    color: #999999;
+    outline: none;
+    font-size: 18px;
+    border: 2px solid #999999;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact_form .textarea {
+    background: transparent;
+    padding: 10px;
+    color: #999999;
+    outline: none;
+    font-size: 18px;
+    border: 2px solid #999999;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+}
+
+
+.con_submit{
+display: flex;
+justify-content: space-between;
+}
+
+.con_submit span {
+    color: #fff;
+    margin-left: -243px;
+    margin-top: 8px;
+}
+
+
+.con_submit button {
+    font-size: 14px;
+    border: 1px solid var(--1st_color);
+    padding: 9px 39px;
+    color: #fff;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.con_submit button:hover{
+    background-color: #48baff;
+}
+
+
+/* Footer Design Part */
+
+.footer_con{
+    padding: 20px 0;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_container p{
+    margin-top: 10px;
+}
+
+.fotter_social_icon a{
+    color: #fff;
+    background: var(--1st_color);
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.fotter_social_icon a:hover{
+    border: 1px solid var(--1st_color);
+    background: transparent;
+    color: var(--1st_color);
+    transition: 0.4s;
+}
